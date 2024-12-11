@@ -35,13 +35,15 @@ impl StateMachine for LightSwitch {
 
     // turn the light on
     fn turn_on(&self, t: &Self::Transition) -> Self::State {
-        todo!()
+        let on = true;
+        return on;
     }
 
     // turn the light off
     fn turn_off(&self, t: &Self::Transition) -> Self::State {
-        todo!()
-    }
+        let off = false;
+        return off;
+     }
 
     // change whatever state that was passed as an arguement
     fn toggle(&self, t: &Self::State) -> Self::State {
